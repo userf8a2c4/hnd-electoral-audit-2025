@@ -1,43 +1,46 @@
 # Monitor de Integridad de Datos: Honduras 2025
 ### Auditoría Técnica de Series Temporales - JSON Público CNE
+### Technical Audit of Time Series Data - CNE Public JSON
 
-Este repositorio documenta un ejercicio de auditoría ciudadana independiente sobre el proceso electoral 2025 en Honduras. El objetivo principal es asegurar la trazabilidad, transparencia y consistencia de los datos oficiales publicados por el Consejo Nacional Electoral (CNE) mediante el análisis de su fuente digital original.
+Este repositorio documenta un ejercicio de auditoría ciudadana independiente sobre el proceso electoral 2025 en Honduras. El objetivo es asegurar la trazabilidad y consistencia de los datos oficiales publicados por el Consejo Nacional Electoral (CNE).
 
-## Estado del Monitoreo
-El análisis se realiza de forma continua sobre el flujo de datos del sistema de resultados, enfocándose en los siguientes puntos críticos:
+This repository documents an independent citizen audit of the 2025 Honduran electoral process. The main goal is to ensure the traceability and consistency of the official data published by the National Electoral Council (CNE).
 
-* **Seguimiento de Tendencias:** Evaluación de la estabilidad de la muestra procesada y su representatividad estadística conforme avanza el escrutinio.
-* **Proyección de Irreversibilidad:** Análisis matemático basado en el volumen de actas pendientes para determinar la solidez de las tendencias actuales bajo condiciones de flujo orgánico.
-* **Vigilancia de Actas Especiales:** Monitoreo específico del procesamiento de actas bajo escrutinio especial para verificar que su comportamiento aritmético sea consistente con la muestra general y no presente sesgos de manipulación manual.
+## Estado del Monitoreo / Monitoring Status
+El análisis se realiza de forma continua sobre el flujo de datos del sistema de resultados:
 
-## Metodología Técnica (Análisis de Series Temporales)
-La auditoría se basa en la trazabilidad del dato mediante el **Análisis de Diferenciales Horarios (Delta Analysis)**. Este método permite identificar cambios en la base de datos que no son visibles en los totales acumulados.
+* **Seguimiento de Tendencias / Trend Tracking:** Evaluación de la estabilidad de la muestra y su representatividad estadística.
+* **Proyección de Irreversibilidad / Irreversibility Projection:** Análisis matemático sobre el volumen de actas pendientes para determinar la solidez de las tendencias actuales.
+* **Vigilancia de Actas Especiales / Special Scrutiny Watch:** Monitoreo específico del flujo de "Actas Especiales" (votos sujetos a escrutinio manual por inconsistencias en la transmisión inicial) para verificar su consistencia con la muestra general.
 
-### 1. Cálculo del Diferencial (Δ)
-Para cada actualización del JSON oficial, se aplica la siguiente fórmula por cada candidato o fuerza política:
+## Metodología Técnica / Technical Methodology
+La auditoría se basa en el **Análisis de Diferenciales Horarios (Delta Analysis)**. / The audit is based on **Time-Series Delta Analysis**.
 
+### 1. Cálculo del Diferencial (Δ) / Delta Calculation
 $$Δ = V_{n} - V_{n-1}$$
+* **ES:** Un valor negativo ($Δ < 0$) indica eliminación de registros en la base de datos oficial (imposibilidad física en un conteo aditivo).
+* **EN:** A negative value ($Δ < 0$) indicates the deletion of records from the official database (a physical impossibility in an additive count).
 
-Donde $V_{n}$ es el total de votos en la captura actual y $V_{n-1}$ es el total en la captura inmediata anterior. En un sistema de conteo aditivo real, el valor de $Δ$ debe ser siempre mayor o igual a cero ($Δ \ge 0$). Un valor negativo indica la eliminación de registros en la base de datos.
-
-### 2. Detección de Anomalías (Tabla de Control)
-Esta tabla ilustra cómo el análisis diferencial identifica irregularidades técnicas que pasan desapercibidas en el total acumulado:
-
-| Timestamp | Candidato A (Total) | Candidato B (Total) | Δ A (Votos Nuevos) | Δ B (Votos Nuevos) | Estado |
+### 2. Tabla de Control de Anomalías / Anomaly Control Table (Example)
+| Timestamp | Cand. A (Total) | Cand. B (Total) | Δ A (Votos) | Δ B (Votos) | Estado / Status |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| 22:00 | 150,000 | 140,000 | - | - | Base de control |
+| 22:00 | 150,000 | 140,000 | - | - | Base |
 | 23:00 | 155,000 | 142,000 | +5,000 | +2,000 | **Normal** |
-| 00:00 | **154,500** | 148,000 | **-500** | +6,000 | **ANOMALÍA** (Votos restados) |
-| 01:00 | 156,000 | **165,000** | +1,500 | **+17,000** | **ALERTA** (Inyección atípica) |
+| 00:00 | **154,500** | 148,000 | **-500** | +6,000 | **ANOMALÍA** |
+| 01:00 | 156,000 | **165,000** | +1,500 | **+17,000** | **ALERTA** |
 
-### 3. Pruebas de Distribución y Validaciones
-* **Análisis de Flujo:** Se compara el peso relativo del crecimiento de cada partido contra su tendencia histórica para detectar inyecciones de datos no orgánicas.
-* **Integridad de Fuente:** Verificación de metadatos en el JSON para detectar reemplazos de actas o cambios en la información post-transmisión.
+## Fuentes y Verificación / Sources and Verification
+* **Source URL:** `https://resultados2025.cne.hn/` (O la URL oficial correspondiente).
+* **Data Integrity:** Cada archivo en `/data` incluye su respectivo Hash SHA-256 para garantizar que el archivo no ha sido modificado post-descarga.
 
-## Organización del Repositorio
-* `/data`: Registro histórico de archivos JSON originales (fuente primaria con marca de tiempo).
-* `/scripts`: Herramientas de código abierto (Python/Pandas) para la validación automática de datos.
-* `/reports`: Documentación técnica de discrepancias identificadas, incluyendo logs de errores y comparativas de integridad.
+## Organización / Structure
+* `/data`: Archivos JSON originales (Raw snapshots).
+* `/scripts`: Herramientas de validación (Python/Pandas).
+* `/reports`: Documentación técnica de discrepancias identificadas.
 
 ---
-**Aviso de Neutralidad:** Este proyecto es una iniciativa de transparencia técnica. No tiene afiliación partidaria y su propósito es proporcionar evidencia basada en datos para el fortalecimiento de la integridad electoral.
+
+### Neutrality Disclosure / Aviso de Neutralidad
+**English:** This repository is an independent, non-partisan technical initiative. Its sole purpose is to provide data-driven evidence regarding the integrity of the 2025 Honduran electoral process. All findings are derived strictly from the official JSON data published by the National Electoral Council (CNE).
+
+**Español:** Este repositorio es una iniciativa técnica independiente y no partidista. Su único propósito es proporcionar evidencia basada en datos sobre la integridad del proceso electoral de Honduras 2025. Todos los hallazgos se derivan estrictamente de los datos JSON oficiales publicados por el Consejo Nacional Electoral (CNE).
