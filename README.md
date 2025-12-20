@@ -5,14 +5,14 @@ Este repositorio documenta una auditoría ciudadana independiente sobre el proce
 
 ---
 
-## 🚨 Hallazgos Críticos / Critical Findings
+##  Hallazgos Críticos / Critical Findings
 El análisis forense realizado sobre la serie histórica de datos (ubicada en `/data`) ha identificado las siguientes irregularidades:
 
 * **Interrupción de Transparencia (Data Blackout):** Suspensión de la divulgación de resultados nominales el 08/12 entre las 14:00 y 17:00, periodo en el cual se detectó un cambio de tendencia estadísticamente improbable.
 * **Manipulación del Universo:** Alteración del conteo total de actas proyectadas (+15 actas) sin justificación técnica durante el procesamiento.
 * **Parálisis del Sistema:** Estancamiento deliberado del flujo de datos al alcanzar el 99.4%, manteniendo 2,773 actas en estado de "inconsistencia" (14.4% del total).
 
-👉 **[LEA EL REPORTE FORENSE COMPLETO AQUÍ / READ THE FULL FORENSIC REPORT HERE](./reports/FORENSIC_TIMELINE_HN2025.md)**
+ **[LEA EL REPORTE FORENSE COMPLETO AQUÍ / READ THE FULL FORENSIC REPORT HERE](./reports/FORENSIC_TIMELINE_HN2025.md)**
 
 ---
 
