@@ -1,7 +1,7 @@
 Registro de Muestras (002 - 080)
 | ID Muestra | Link al Post en X | Imagen Local (GitHub) |
 | :--- | :--- | :--- |
-| **Muestra 002** | [https://x.com/CarlosRZHN/status/1996357368511426759] | [./evidence/screenshots/2025-12-03_1710_PRES_Muestra_002.png] |
+| **Muestra 002** | [https://x.com/CarlosRZHN/status/1996357368511426759] | [(./evidence/screenshots/2025-12-03_1710_PRES_Muestra_002.png)] |
 | **Muestra 003** | [https://x.com/CarlosRZHN/status/1996359110410092596] | [./evidence/screenshots/2025-12-03_1720_PRES_Muestra_003.png] |
 | **Muestra 004** | [https://x.com/CarlosRZHN/status/1996362785278828665] | [./evidence/screenshots/2025-12-03_1730_PRES_Muestra_004.png] |
 | **Muestra 005** | [https://x.com/CarlosRZHN/status/1996365755861065738] | [./evidence/screenshots/2025-12-03_1745_PRES_Muestra_005.png] |
