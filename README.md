@@ -14,6 +14,16 @@ El análisis forense realizado sobre la serie histórica de datos (ubicada en `/
 
  **[LEA EL REPORTE FORENSE COMPLETO AQUÍ / READ THE FULL FORENSIC REPORT HERE](./reports/FORENSIC_TIMELINE_HN2025.md)**
 
+
+[MAPA DE EVIDENCIA (Muestras 002-080)](EVIDENCE_MAP.md): Relación directa entre capturas de pantalla y publicaciones originales.
+
+[CARPETA DE CAPTURAS](evidence/screenshots): Archivos crudos sin editar.
+
+Hallazgos Principales:
+Borrados masivos de actas en el sistema de visualización pública.
+
+Saltos estadísticos imposibles de revertir sin manipulación. 
+
 ---
 
 ## Organización del Repositorio / Structure
