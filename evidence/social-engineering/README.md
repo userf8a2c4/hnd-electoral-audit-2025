@@ -21,11 +21,13 @@ Tras la publicación de hallazgos críticos, se registró una operación de repo
 
 ---
 
-## Archivos de Evidencia / Evidence Files:
+## Archivos de Evidencia / Evidence Files
 
-* `2025-12-13_IROSHKA_POST_ATTACK.png`: Ataque inicial en hilo oficial. / *Initial attack on official thread.*
-* `2025-12-13_MARIPOSA_ALADA_DEBATE_AUDITORIA.png`: Intentos de desacreditación técnica. / *Technical discredit attempts.*
-* `2025-12-15_X_TIMELINE_ATTACK_TO_SHADOWBAN.png`: Secuencia desde el ataque coordinado hasta la restricción de cuenta (Shadowban). / *Sequence from coordinated attack to account restriction (Shadowban).*
-* `2025-12-18_MARIPOSA_ALADA_BAN_ADMISSION.png`: Registro de la admisión de baneo/censura. / *Record of ban/censorship admission.*
-* `2025-12-23_MARIPOSA_ALADA_ELITE_FOLLOWING.png`: Prueba de red de contactos vinculada a la cúpula del PNH. / *Evidence of contact network linked to PNH leadership.*
-* `2025-12-23_MARIPOSA_ALADA_WALL_PNH_BIAS.png`: Registro de propaganda política y sesgo partidario en el perfil. / *Record of political propaganda and party bias in the profile.*
+A continuación se presentan las capturas de pantalla vinculadas a sus publicaciones originales para verificación de integridad: / *The following screenshots are linked to their original posts for integrity verification:*
+
+* [**2025-12-13_IROSHKA_POST_ATTACK.png**](./evidence/social-engineering/2025-12-13_IROSHKA_POST_ATTACK.png) — [Post Original (X)](https://x.com/CarlosRZHN/status/1999929800975348112): Ataque inicial en hilo oficial. / *Initial attack on official thread.*
+* [**2025-12-13_MARIPOSA_ALADA_DEBATE_AUDITORIA.png**](./evidence/social-engineering/2025-12-13_MARIPOSA_ALADA_DEBATE_AUDITORIA.png) — [Post Original (X)](https://x.com/CarlosRZHN/status/2000336852029767759): Intentos de desacreditación técnica. / *Technical discredit attempts.*
+* [**2025-12-15_X_TIMELINE_ATTACK_TO_SHADOWBAN.png**](./evidence/social-engineering/2025-12-15_X_TIMELINE_ATTACK_TO_SHADOWBAN.png): Secuencia desde el ataque coordinado hasta la restricción de cuenta (Shadowban). / *Sequence from coordinated attack to account restriction (Shadowban).*
+* [**2025-12-18_MARIPOSA_ALADA_BAN_ADMISSION.png**](./evidence/social-engineering/2025-12-18_MARIPOSA_ALADA_BAN_ADMISSION.png) — [Post Original (X)](https://x.com/CarlosRZHN/status/2001699672193196439): Registro de la admisión de baneo/censura. / *Record of ban/censorship admission.*
+* [**2025-12-23_MARIPOSA_ALADA_ELITE_FOLLOWING.png**](./evidence/social-engineering/2025-12-23_MARIPOSA_ALADA_ELITE_FOLLOWING.png) — [Perfil de Red (X)](https://x.com/Marialadaposa/following): Prueba de red de contactos vinculada a la cúpula del PNH. / *Evidence of contact network linked to PNH leadership.*
+* [**2025-12-23_MARIPOSA_ALADA_WALL_PNH_BIAS.png**](./evidence/social-engineering/2025-12-23_MARIPOSA_ALADA_WALL_PNH_BIAS.png) — [Muro de Perfil (X)](https://x.com/Marialadaposa): Registro de propaganda política y sesgo partidario en el perfil. / *Record of political propaganda and party bias in the profile.*
