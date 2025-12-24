@@ -1,25 +1,31 @@
 # Ingeniería Social y Guerra de Narrativas / Social Engineering & Narrative Warfare
 
-Este apartado documenta la actividad coordinada en redes sociales destinada a desacreditar la auditoría técnica y silenciar la divulgación de inconsistencias en los datos JSON.
+Este apartado documenta la actividad coordinada en redes sociales destinada a desacreditar la auditoría técnica y silenciar la divulgación de inconsistencias en los datos JSON. / *This section documents coordinated social media activity aimed at discrediting the technical audit and silencing the disclosure of inconsistencies within the JSON data.*
+
+---
 
 ## Casos Documentados / Documented Cases
 
-### 1. Hostilidad Coordinada (Caso: Mariposa Alada)
-Se identifica una cuenta de choque vinculada a la élite del Partido Nacional (PNH) que actúa para invalidar el análisis forense de datos.
-* **Evidencia:** Uso de ataques *ad hominem* y descalificación de los archivos JSON como "paja" o "irresponsables" para disuadir la consulta pública.
-* **Vínculos:** El perfil de la cuenta muestra una red de seguidos exclusiva de la cúpula partidaria y una línea de tiempo dedicada a la propaganda política.
+### 1. Hostilidad Coordinada (Caso: Mariposa Alada) / Coordinated Hostility
+Se identifica una cuenta de choque vinculada a la élite del Partido Nacional (PNH) que actúa para invalidar el análisis forense de datos. / *A "shock account" linked to the National Party (PNH) elite has been identified, acting to invalidate the forensic data analysis.*
 
-### 2. Admisión de Censura y Shadowban
-Tras la publicación de hallazgos críticos sobre 19,751 votos congelados, se registró una operación de reporte masivo.
-* **Confesión:** La cuenta de choque admitió conocimiento directo sobre el baneo del auditor con la frase "Yo no lo baneé", confirmando el monitoreo constante y la intención de silenciamiento.
+* **Evidencia / Evidence:** Uso de ataques *ad hominem* y descalificación de los archivos JSON como "paja" o "irresponsables". / *Use of ad hominem attacks and disqualification of JSON files as "nonsense" or "irresponsible."*
+* **Vínculos / Links:** Perfil con red de seguidos exclusiva de la cúpula partidaria y muro dedicado a propaganda política. / *Profile with a following network exclusive to party leadership and a wall dedicated to political propaganda.*
 
-### 3. Debate sobre Integridad: Físico vs. Digital
-Registro de la narrativa que intenta invalidar la prueba digital (TREP/JSON) exigiendo únicamente el acta física, ignorando que el fraude moderno ocurre en la alteración del dato durante su procesamiento.
+### 2. Cronología de Censura y Shadowban / Censorship Timeline
+Tras la publicación de hallazgos críticos, se registró una operación de reporte masivo que resultó en la restricción técnica de la cuenta del auditor. / *Following the publication of critical findings, a mass-reporting operation was recorded, resulting in the technical restriction of the auditor's account.*
+
+* **14 Dic:** Ataques coordinados tras la divulgación de discrepancias en el 99.4%. / *Dec 14: Coordinated attacks following the disclosure of discrepancies at the 99.4% mark.*
+* **15 Dic:** X aplica una "etiqueta temporal" (shadowban) limitando el alcance de la auditoría inmediatamente después de los ataques. / *Dec 15: X applies a "temporary label" (shadowban), limiting the audit's reach immediately after the attacks.*
+* **Confesión / Admission:** La cuenta agresora admitió conocimiento directo del baneo con la frase "Yo no lo baneé". / *The aggressor account admitted direct knowledge of the ban with the phrase "I didn't ban him."*
 
 ---
 
 ## Archivos de Evidencia / Evidence Files:
-* `2025-12-13_IROSHKA_POST_ATTACK.jpg` - Ataque inicial en hilo oficial.
-* `2025-12-14_MARIPOSA_ALADA_DEBATE_AUDITORIA.jpg` - Intentos de desacreditación técnica.
-* `2025-12-18_MARIPOSA_ALADA_BAN_ADMISSION.jpg` - Registro de la admisión de baneo/censura.
-* `2025-12-21_MASTERCHIEF_PHYSICAL_VS_DIGITAL.jpg` - Discusión sobre la validez del sistema.
+
+* `2025-12-13_IROSHKA_POST_ATTACK.png`: Ataque inicial en hilo oficial. / *Initial attack on official thread.*
+* `2025-12-13_MARIPOSA_ALADA_DEBATE_AUDITORIA.png`: Intentos de desacreditación técnica. / *Technical discredit attempts.*
+* `2025-12-15_X_TIMELINE_ATTACK_TO_SHADOWBAN.png`: Secuencia desde el ataque coordinado hasta la restricción de cuenta (Shadowban). / *Sequence from coordinated attack to account restriction (Shadowban).*
+* `2025-12-18_MARIPOSA_ALADA_BAN_ADMISSION.png`: Registro de la admisión de baneo/censura. / *Record of ban/censorship admission.*
+* `2025-12-23_MARIPOSA_ALADA_ELITE_FOLLOWING.png`: Prueba de red de contactos vinculada a la cúpula del PNH. / *Evidence of contact network linked to PNH leadership.*
+* `2025-12-23_MARIPOSA_ALADA_WALL_PNH_BIAS.png`: Registro de propaganda política y sesgo partidario en el perfil. / *Record of political propaganda and party bias in the profile.*
