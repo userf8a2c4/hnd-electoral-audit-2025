@@ -20,13 +20,13 @@ El análisis forense realizado sobre la serie histórica de datos (ubicada en `/
 
 Para garantizar la inmutabilidad de la prueba, se han organizado los registros en las siguientes secciones:
 
-### 1. [Predicciones y Cronología (07/12)](./evidence/predictions-chronology/)
+### 1. [Predicciones y Cronología (07/12)](https://github.com/userf8a2c4/hnd-electoral-audit-2025/tree/main/evidence/evidence/predictions-chronology)
 **Prueba reina de intencionalidad.** Registro de alertas técnicas y OSINT emitidas **24 horas antes** de la caída del sistema, donde se predijeron con exactitud los patrones de manipulación que el CNE/PNH ejecutaría posteriormente.
 
-### 2. [Ingeniería Social y Censura (Shadowban)](./evidence/social-engineering/)
+### 2. [Ingeniería Social y Censura (Shadowban)](https://github.com/userf8a2c4/hnd-electoral-audit-2025/tree/main/evidence/social-engineering)
 Documentación de la actividad coordinada (cuentas de choque) para desacreditar la auditoría y la ejecución de restricciones técnicas (Shadowban) en redes sociales tras la divulgación de los hallazgos del 99.4%.
 
-### 3. [Mapa de Evidencia (Capturas Crudas)](./EVIDENCE_MAP.md)
+### 3. [Mapa de Evidencia (Capturas Crudas)](https://github.com/userf8a2c4/hnd-electoral-audit-2025/blob/main/EVIDENCE_MAP.md)
 Relación directa entre archivos locales y publicaciones originales. Incluye borrados masivos de actas y saltos estadísticos imposibles de revertir sin manipulación.
 
 ---
