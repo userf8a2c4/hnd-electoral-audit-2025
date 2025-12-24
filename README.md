@@ -5,30 +5,36 @@ Este repositorio documenta una auditoría ciudadana independiente sobre el proce
 
 ---
 
-##  Hallazgos Críticos / Critical Findings
+## Hallazgos Críticos / Critical Findings
 El análisis forense realizado sobre la serie histórica de datos (ubicada en `/data`) ha identificado las siguientes irregularidades:
 
 * **Interrupción de Transparencia (Data Blackout):** Suspensión de la divulgación de resultados nominales el 08/12 entre las 14:00 y 17:00, periodo en el cual se detectó un cambio de tendencia estadísticamente improbable.
 * **Manipulación del Universo:** Alteración del conteo total de actas proyectadas (+15 actas) sin justificación técnica durante el procesamiento.
 * **Parálisis del Sistema:** Estancamiento deliberado del flujo de datos al alcanzar el 99.4%, manteniendo 2,773 actas en estado de "inconsistencia" (14.4% del total).
 
- **[LEA EL REPORTE FORENSE COMPLETO AQUÍ / READ THE FULL FORENSIC REPORT HERE](./reports/FORENSIC_TIMELINE_HN2025.md)**
+**[LEA EL REPORTE FORENSE COMPLETO AQUÍ / READ THE FULL FORENSIC REPORT HERE](./reports/FORENSIC_TIMELINE_HN2025.md)**
 
+---
 
-[MAPA DE EVIDENCIA (Muestras 002-080)](EVIDENCE_MAP.md): Relación directa entre capturas de pantalla y publicaciones originales.
+## Expediente de Evidencia / Evidence Dossier
 
-[CARPETA DE CAPTURAS](evidence/screenshots): Archivos crudos sin editar.
+Para garantizar la inmutabilidad de la prueba, se han organizado los registros en las siguientes secciones:
 
-Hallazgos Principales:
-Borrados masivos de actas en el sistema de visualización pública.
+### 1. [Predicciones y Cronología (07/12)](./evidence/predictions-chronology/)
+**Prueba reina de intencionalidad.** Registro de alertas técnicas y OSINT emitidas **24 horas antes** de la caída del sistema, donde se predijeron con exactitud los patrones de manipulación que el CNE/PNH ejecutaría posteriormente.
 
-Saltos estadísticos imposibles de revertir sin manipulación. 
+### 2. [Ingeniería Social y Censura (Shadowban)](./evidence/social-engineering/)
+Documentación de la actividad coordinada (cuentas de choque) para desacreditar la auditoría y la ejecución de restricciones técnicas (Shadowban) en redes sociales tras la divulgación de los hallazgos del 99.4%.
+
+### 3. [Mapa de Evidencia (Capturas Crudas)](./EVIDENCE_MAP.md)
+Relación directa entre archivos locales y publicaciones originales. Incluye borrados masivos de actas y saltos estadísticos imposibles de revertir sin manipulación.
 
 ---
 
 ## Organización del Repositorio / Structure
 * **/data**: Archivos JSON originales (Raw snapshots) extraídos directamente de la API del CNE. Cada archivo incluye su marca de tiempo original.
 * **/reports**: Documentación técnica bilingüe, análisis de discrepancias identificadas y timeline forense.
+* **/evidence**: Capturas de pantalla, registros de OSINT y documentación de ataques de ingeniería social.
 
 ## Verificación de Integridad / Integrity Verification
 Cada archivo en `/data` cuenta con un Hash SHA-256 para garantizar que la evidencia no ha sido modificada post-descarga. Puede verificar la integridad de los datos ejecutando:
